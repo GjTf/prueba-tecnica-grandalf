@@ -1,0 +1,15 @@
+# ───── Entorno Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# ───── Notebooks
+.ipynb_checkpoints/
+
+# ───── Datos voluminosos (mantén en local)
+DATA/*.csv
+DATA/*.parquet
+
+# ───── Archivos sensibles
+.env
+*.key
