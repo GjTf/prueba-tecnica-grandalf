@@ -2,18 +2,17 @@
 Carga el dataset limpio a PostgreSQL empleando exclusivamente la interfaz de
 pandas (`read_parquet`, transformaciones DataFrame y `to_sql`).
 """
-
-import os
-from datetime import datetime
-from SRC.config import CLEAN_PARQUET_PATH, PG_URI
-import pandas as pd
-from sqlalchemy import create_engine
 import sys, pathlib
-
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
+import os
+from datetime import datetime
+from SRC.config import CLEAN_PARQUET_PATH
+from SRC.config import PG_URI
+import pandas as pd
+from sqlalchemy import create_engine
 
 # ---------------------------------------------------------------------------
 # 1. Conexión a PostgreSQL
