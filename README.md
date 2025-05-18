@@ -24,12 +24,10 @@ Proyecto demostrativo de ciclo completo de datos sobre **500 000 atenciones méd
 │   ├── **init**.py
 │   ├── config.py              # rutas y PG\_URI
 │   └── etl.py
-├── SQL/
-│   └── create\_tables.sql      # esquema 'atenciones\_medicas'
-├── models/
-│   └── readmission\_logreg.joblib
 ├── DASHBOARD/
-│   └── atenciones\_medicas.pbix
+│   ├── DASHBOARD_LINK.md
+│   ├── dashboard_overview.png              
+│   └── relationships_overview.png
 ├── requirements.txt
 └── README.md                  # ← este archivo
 
