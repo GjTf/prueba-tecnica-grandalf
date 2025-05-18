@@ -5,7 +5,7 @@ import os
 # ──────────────────────────────────────────────────────────────────────────────
 
 # Carpeta raíz del proyecto
-PROJECT_ROOT: Path = Path(r"C:\Users\GRANDALF TELLERIAS\OneDrive - STI DATA AND BUSINESS INTELLIGENCE\Desktop\PruebaTecnicaGrandalf")
+PROJECT_ROOT: Path = Path(r" ") #aqui va la ruta
 
 # Datos crudos (CSV original)
 RAW_CSV_PATH: Path = PROJECT_ROOT / "DATA" / "dataset_salud_500k.csv"
