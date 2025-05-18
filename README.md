@@ -17,6 +17,10 @@ Proyecto demostrativo de ciclo completo de datos sobre **500 000 atenciones méd
 ├── DATA/                      # < .gitignore >  CSV y Parquet
 │   ├── dataset\_salud\_500k.csv
 │   └── clean\_dataset.parquet
+├── DASHBOARD/
+│   ├── DASHBOARD_LINK.md
+│   ├── dashboard_overview.png              
+│   └── relationships_overview.png
 ├── NOTEBOOKS/
 │   ├── 01\_eda\_y\_limpieza.ipynb
 │   └── 02\_modelo\_predictivo.ipynb
@@ -24,10 +28,8 @@ Proyecto demostrativo de ciclo completo de datos sobre **500 000 atenciones méd
 │   ├── **init**.py
 │   ├── config.py              # rutas y PG\_URI
 │   └── etl.py
-├── DASHBOARD/
-│   ├── DASHBOARD_LINK.md
-│   ├── dashboard_overview.png              
-│   └── relationships_overview.png
+├── SQL/
+│   └── create_tables.sql
 ├── requirements.txt
 └── README.md                  # ← este archivo
 
@@ -52,8 +54,7 @@ pip install -r requirements.txt
 ```bash
 # credenciales por defecto (cámbialas o usa variables de entorno)
 createuser -s postgres           # si no existe
-createdb  prueba
-psql -d prueba -f SQL/create_tables.sql
+createdb  postgres               # si no existe
 ```
 
 > **Variables de entorno** (opcionales, ya hay valores por defecto en `config.py`)
